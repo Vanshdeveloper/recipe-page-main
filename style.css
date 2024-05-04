@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%); 
+    --Eggshell: hsl(30, 54%, 90%); 
+    --LightGrey: hsl(30, 18%, 87%); 
+    --WengeBrown: hsl(30, 10%, 34%); 
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --papaya: papayawhip;
+}
+
+main{
+    background: #f3e6d8;
+    display: flex;
+}
+
+main section{
+    width: 100%;
+    background: var(--White);
+}
+
+main section .img_cont img{
+    width: 100%;
+    background-position: center;
+}
+
+main section .recipe_name{
+    padding: 10px 30px;
+}
+
+main section .recipe_name h1{
+    padding: 20px 0;
+    font-size: 30px;
+    font-family: 'Young serif', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--DarkCharcoal);
+}
+
+main section .recipe_name p{
+    /* padding: 10px 0; */
+    /* font-size: 30px; */
+    font-family: 'Outfit';
+    font-size: 17px;
+    color: var(--WengeBrown);
+}
+
+main section .perp_bx{
+    margin: 20px 30px 0 30px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    background: hsla(332, 51%, 32%, 0.055);
+}
+
+main section .perp_bx p{
+    padding: 10px;
+    color: var(--DarkRaspberry);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+
+main section .perp_bx ul{
+    padding: 0 0 0 20px;
+}
+
+main section .perp_bx ul li::marker{
+    color: var(--DarkRaspberry);
+}
+
+.perp_bx ul li a{
+    font-weight: 800;
+    color: var(--WengeBrown);
+}
+
+.perp_bx ul li{
+    padding: 10px 0 0 15px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--DarkCharcoal);
+}
+
+.ingredient{
+    padding: 20px 30px;
+    /* background: #000; */
+}
+
+.ingredient h1{
+    font-size: 25px;
+    color: var(--Nutmeg);
+    font-family: 'Young Serif';
+    font-weight: 400;
+}
+
+.ingredient ul{
+    padding: 10px 20px;
+}
+
+.ingredient ul li::marker{
+    color: var(--DarkRaspberry);
+}
+
+.ingredient ul li{
+    padding: 10px 20px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--WengeBrown);
+}
+
+main section .line{
+    width: 80%;
+    border: 1px solid var(--LightGrey);
+    transform: translateX(12%);
+}
+
+.instructions{
+    padding: 20px 30px;
+    /* background: #000; */
+}
+
+.instructions h1{
+        font-size: 25px;
+        color: var(--Nutmeg);
+        font-family: 'Young Serif';
+        font-weight: 400;
+}
+
+.instructions ul{
+    padding: 10px 20px;
+}
+
+.instructions ul li::marker{
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+
+.instructions ul li{
+    list-style-type: number;
+    padding: 10px 20px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--WengeBrown);
+}
+
+.instructions ul li a{
+    font-weight: 700;
+}
+
+.nutrition{
+    padding: 20px 30px;
+}
+
+.nutrition h1{
+    font-size: 25px;
+    color: var(--Nutmeg);
+    font-family: 'Young Serif';
+    font-weight: 400;
+}
+
+.nutrition p{
+    padding: 15px 0;
+    color: var(--WengeBrown);
+    font-family: 'Outfit', sans-serif;
+}
+
+.nutrition tr{
+    width: 400px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+.nutrition tr .item{
+    color: var(--WengeBrown);
+    font-family: 'Outfit';
+    font-weight: 600;
+}
+
+.nutrition tr .quantity{
+    color: var(--Nutmeg);
+    font-family: 'Outfit';
+    font-weight: 800;
+}
+
+/* .nutrition tr td{} */
+
+@media (max-width: 400px) {
+    .nutrition tr{
+        width: 200px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--LightGrey);
+    }
+}
+
+@media (min-width: 800px) {
+    main section .recipe_name{
+        padding: 5px;
+    }
+
+    main{
+        background: var(--papaya);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section{
+        margin: 150px auto;
+        padding: 20px 20px;
+        width: 50%;
+        background: var(--White);
+        border-radius: 20px;
+    }
+
+    main section .img_cont img{
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+    }
+
+    main section .perp_bx{
+        margin: 20px 0;
+        padding: 10px 20px 20px 20px;
+        border-radius: 10px;
+        width: 100%;
+        background: hsla(332, 51%, 32%, 0.055);
+    }
+    
+    main section .perp_bx p{
+        padding: 10px;
+        color: var(--DarkRaspberry);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    main section .perp_bx ul{
+        padding: 0 0 0 20px;
+    }
+    
+    main section .perp_bx ul li::marker{
+        color: var(--DarkRaspberry);
+    }
+    
+    main section .perp_bx ul li a{
+        font-weight: 800;
+        color: var(--WengeBrown);
+    }
+    
+    main section .perp_bx ul li{
+        padding: 10px 0 0 15px;
+        font-family: 'Outfit', sans-serif;
+        color: var(--DarkCharcoal);
+    }
+
+    main section .line{
+        width: 93%;
+        border: 1px solid var(--LightGrey);
+        transform: translateX(3%);
+    }
+}
+
